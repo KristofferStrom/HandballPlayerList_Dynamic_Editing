@@ -34,7 +34,7 @@ public class TableColorService
         }
         return ConvertToTableColor(_currentTableColorName);
     }
-    public void SetCurrentTableColor(string tableColorName)
+    public void SetCurrentTableColor(string tableColorName, int amountOfRows)
     {
         _currentTableColorName = tableColorName;
 
@@ -43,7 +43,7 @@ public class TableColorService
             var rnd = new Random();
             _randomColors = [];
 
-            for (int i = 0; i < _availableColors.Count; i++)
+            for (int i = 0; i < amountOfRows; i++)
             {
                 _randomColors.Add(_allColors[rnd.Next(0, _allColors.Count - 2)]);
             }

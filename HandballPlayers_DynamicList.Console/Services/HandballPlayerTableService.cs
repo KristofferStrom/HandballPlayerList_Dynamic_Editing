@@ -67,4 +67,5 @@ public class HandballPlayerTableService(ConsoleService consoleService, HandballP
         _tableRows = [.. _tableRows.OrderByDescending(keySelector.Compile())];
         _latestOrderDirection = "desc";
     }
+    internal int GetRowCount() => _tableRows.Count;
 }

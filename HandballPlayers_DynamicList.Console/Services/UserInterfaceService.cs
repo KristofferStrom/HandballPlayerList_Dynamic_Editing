@@ -126,7 +126,7 @@ public class UserInterfaceService(ConsoleService consoleService, TableColorServi
                 break;
 
             _tableColorService.UpdateAvailableTableColorNames(tableColorNames[selection - 1]);
-            _tableColorService.SetCurrentTableColor(tableColorNames[selection - 1]);
+            _tableColorService.SetCurrentTableColor(tableColorNames[selection - 1], _tableService.GetRowCount());
             _tableService.UpdateTableColor();
         }
     }
