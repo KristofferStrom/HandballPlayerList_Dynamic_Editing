@@ -23,4 +23,9 @@ public static class UIHelper
 
         return whitespace;
     }
+
+    public static string GetArrowUp() => "\x02C6";
+    public static string GetArrowDown() => "\x02C7";
+
+
 }

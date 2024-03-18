@@ -59,10 +59,10 @@ public class UserInterfaceService(ConsoleService consoleService, TableColorServi
             switch (selection)
             {
                 case 1:
-                    Order("FirstName", row => row.TableItem.FirstName);
+                    Order("Firstname", row => row.TableItem.FirstName);
                     break;
                 case 2:
-                    Order("LastName", row => row.TableItem.LastName);
+                    Order("Lastname", row => row.TableItem.LastName);
                     break;
                 case 3:
                     Order("Position", row => row.TableItem.Positions[0]);
@@ -143,6 +143,7 @@ public class UserInterfaceService(ConsoleService consoleService, TableColorServi
     }
     private void DisplayTable()
     {
+       
         _consoleService.ClearScreen();
 
         _consoleService.AddHeader("Handball Players");

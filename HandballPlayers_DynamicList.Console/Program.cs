@@ -27,7 +27,7 @@ using (var scope = host.Services.CreateScope())
 
 
     var menuService = services.GetRequiredService<UserInterfaceService>();
-
+    Console.OutputEncoding = System.Text.Encoding.UTF8;
     menuService.MainPage();
 }
 
